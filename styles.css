@@ -131,12 +131,13 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-input:invalid {
-    border: red solid;
-}
-  
+
 input:valid {
-    border: 2px green solid;
+    border: green solid;
+}
+
+input:invalid, input.fail {
+    border: red solid;
 }
 
 input:focus {
