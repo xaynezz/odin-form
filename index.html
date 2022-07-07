@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
     <title>Odin Form</title>
 </head>
 <body>
@@ -27,46 +28,44 @@
                     <p>Created by <a href="https://github.com/xaynezz" target="_blank">Andrew Oak</a></p>
                 </div>
         </div>
-        <div class="middle">
-            <form method="post">
-                <h2>Let's go!</h2>
-                <div class="form">
-                    <div class="input">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName">
-                    </div>
-
-                    <div class="input">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName">
-                    </div>
-
-                    <div class="input">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-
-                    <div class="input">
-                        <label for="phoneNumber">Phone Number</label>
-                        <input type="number" id="phoneNumber" name="phoneNumber">
-                    </div>
-
-                    <div class="input">
-                        <label for="lastName">Password</label>
-                        <input type="password" id="lastName" name="lastName">
-                    </div>
-
-                    <div class="input">
-                        <label for="lastName">Confirm Password</label>
-                        <input type="password" id="lastName" name="lastName">
-                    </div>
+        <form method="post" class="middle">
+            <h2>Let's go!</h2>
+            <div class="form">
+                <div class="input">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName">
                 </div>
-            </form>
+
+                <div class="input">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="input">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="number" id="phoneNumber" name="phoneNumber">
+                </div>
+
+                <div class="input">
+                    <label for="password1">Password</label>
+                    <input type="password" id="password1" name="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
+
+                <div class="input">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" name="password2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
+            </div>
             <div>
-                <button class="submit">Create Account</button>
+                <button class="submit" type="button">Create Account</button>
                 <p>Already have an account? <b><a href="">Log In Here</a></b></p>
             </div>
-        </div>
+        </form>
     </div>  
 </body>
 </html>
